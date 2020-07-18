@@ -1,0 +1,29 @@
+{
+    "extends": [
+      "tslint:recommended",
+      "tslint-config-prettier",
+      "tslint-plugin-prettier"
+    ],
+    "linterOptions": {
+      "exclude": [
+        "**/node_modules/**/*",
+        "**/*.js",
+        "**/*.json",
+        "**/*.generated.ts"
+      ]
+    },
+    "rules": {
+      "interface-name": false,
+      "object-literal-sort-keys": false,
+      "ordered-imports": false,
+      "jsx-no-lambda": false,
+      "prettier": true,
+      "max-classes-per-file": false,
+      "no-shadowed-variable": false,
+      "member-access": false,
+      "no-var-requires": false,
+      "curly": false,
+      "variable-name": [true, "allow-leading-underscore"]
+    }
+  }
+  
