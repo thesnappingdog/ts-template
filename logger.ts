@@ -10,7 +10,7 @@ export const logger = createLogger({
     format.splat(),
     format.json()
   ),
-  defaultMeta: { service: 'Richards Personal Butler' },
+  defaultMeta: { service: 'template' },
   transports: [
     //
     // - Write to all logs with level `info` and below to `quick-start-combined.log`.

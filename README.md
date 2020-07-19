@@ -18,8 +18,4 @@ Watch mode is yarn dev
 
 # Production
 
-I haven't learned that much yet :-) 
-
-Docker setup with pm2 as its manager
-
-https://en.wikipedia.org/wiki/PM2_(software)
+Runs on node after transpilation.

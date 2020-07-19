@@ -1,11 +1,8 @@
 FROM node:latest
 WORKDIR /app
-COPY package.json tsconfig.json ./
-RUN npm install pm2 -g
-RUN npm install
-COPY ./src ./src
-RUN npm run build
-RUN yarn build
+COPY package.json ./
+# RUN npm install ts-node -g
+RUN npm install --production
 COPY ./dist ./dist
 EXPOSE 4000
-CMD ["pm2-runtime","./dist/src/app.js"]
+CMD ["node","./dist/src/app.js"]
